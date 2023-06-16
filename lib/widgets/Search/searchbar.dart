@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/utils/colors.dart';
 import 'package:instagram_clone/view/screens.dart/profile.dart';
+import 'package:instagram_clone/widgets/Search/realsearch.dart';
 
 class serchfieldwidget extends StatelessWidget {
   @override
@@ -11,7 +12,7 @@ class serchfieldwidget extends StatelessWidget {
       flexibleSpace: InkWell(
         onTap: () {
           Navigator.of(context)
-              .push(MaterialPageRoute(builder: (context) => profile()));
+              .push(MaterialPageRoute(builder: (context) =>const Realsearch()));
         },
         child: Container(
           height: 100,
