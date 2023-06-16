@@ -7,8 +7,6 @@ import 'package:instagram_clone/view/screens.dart/search.dart';
 import 'package:instagram_clone/widgets/profile/editbutton.dart';
 import 'package:instagram_clone/widgets/profile/pstories.dart';
 
-
-
 Widget followers() {
   return SliverAppBar(
     floating: true,

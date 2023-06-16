@@ -4,8 +4,20 @@ import 'package:instagram_clone/utils/colors.dart';
 Widget profilebar() {
   return SliverAppBar(
     actions: [
-      IconButton(onPressed: (){}, icon: Icon(Icons.add_box_outlined,color: wh,size: 35,)),
-        IconButton(onPressed: (){}, icon: Icon(Icons.menu,color: wh,size: 35,))
+      IconButton(
+          onPressed: () {},
+          icon: Icon(
+            Icons.add_box_outlined,
+            color: wh,
+            size: 35,
+          )),
+      IconButton(
+          onPressed: () {},
+          icon: Icon(
+            Icons.menu,
+            color: wh,
+            size: 35,
+          ))
     ],
     floating: true,
     toolbarHeight: 70,

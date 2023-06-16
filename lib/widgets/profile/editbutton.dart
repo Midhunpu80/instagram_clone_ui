@@ -10,43 +10,52 @@ editbutton() {
         child: Container(
           height: 40,
           width: 170,
-     decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Color.fromARGB(199, 42, 41, 41)),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Color.fromARGB(199, 42, 41, 41)),
           child: TextButton(
               onPressed: () {},
-              child:const  Text(
+              child: const Text(
                 "Edit profile",
-                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
               )),
         ),
       ),
-       Padding(
+      Padding(
         padding: const EdgeInsets.only(left: 5),
         child: Container(
           height: 40,
           width: 170,
-     decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Color.fromARGB(199, 42, 41, 41)),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Color.fromARGB(199, 42, 41, 41)),
           child: TextButton(
               onPressed: () {},
-              child:const  Text(
+              child: const Text(
                 "Share profile",
-                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
               )),
         ),
       ),
-       Padding(
+      Padding(
         padding: const EdgeInsets.only(left: 5),
         child: Container(
-          height: 40,
-          width: 39,
-     decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Color.fromARGB(199, 42, 41, 41)),
-          child: IconButton(
+            height: 40,
+            width: 39,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Color.fromARGB(199, 42, 41, 41)),
+            child: IconButton(
               onPressed: () {},
-              icon: Icon(Icons.supervised_user_circle,color: wh,),
-             
-              )),
-        ),
-        //********************************************************************** *//////
-    
+              icon: Icon(
+                Icons.supervised_user_circle,
+                color: wh,
+              ),
+            )),
+      ),
+      //********************************************************************** *//////
     ],
   );
 }

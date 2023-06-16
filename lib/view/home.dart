@@ -12,7 +12,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  List pages = [homepage(), search(), const Reels(), created(), profile()];
+  List pages = [homepage(), search(),   created(),reels(), profile()];
   int current = 0;
 
   @override
