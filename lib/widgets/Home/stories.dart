@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/utils/colors.dart';
+import 'package:instagram_clone/utils/images.dart';
+import 'package:instagram_clone/view/screens.dart/status.dart';
+import 'package:instagram_clone/widgets/status/ownstatus.dart';
 
 class stories extends StatelessWidget {
   @override
@@ -12,13 +15,27 @@ class stories extends StatelessWidget {
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.all(5.0),
-            child: Container(
-              height: 90,
-              width: 90,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(80),
-                  color: blu,
-                  border: Border.all(width: 2, color: pink)),
+            child: InkWell(
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => index == 0
+                        ? ownstatus()
+                        : status(
+                            index: index,
+                          )));
+              },
+              child: Container(
+                height: 90,
+                width: 90,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage(
+                          imagess2[index],
+                        ),
+                        fit: BoxFit.cover),
+                    borderRadius: BorderRadius.circular(80),
+                    border: Border.all(width: 2, color: pink)),
+              ),
             ),
           );
         },
@@ -27,7 +44,7 @@ class stories extends StatelessWidget {
             width: 4,
           );
         },
-        itemCount: 50,
+        itemCount: imagess2.length,
       ),
     );
   }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:instagram_clone/utils/colors.dart';
 import 'package:instagram_clone/widgets/Home/stories.dart';
 import 'package:instagram_clone/widgets/messeges/messegestories.dart';
+import 'package:instagram_clone/widgets/messeges/searchmessge.dart';
 import 'package:instagram_clone/widgets/messeges/usermesseges.dart';
 import 'package:instagram_clone/widgets/profile/pstories.dart';
 
@@ -40,6 +41,7 @@ class messeges extends StatelessWidget {
       ),
       body:  CustomScrollView(
         slivers: [
+          search_messege(),
         Mstories(),
         usermesseges(),
       allmesseges(),

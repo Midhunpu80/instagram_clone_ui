@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/utils/colors.dart';
+import 'package:instagram_clone/view/screens.dart/status.dart';
+import 'package:instagram_clone/widgets/status/ownstatus.dart';
 
 Widget pstories() {
   return Padding(
@@ -14,13 +16,19 @@ Widget pstories() {
             itemBuilder: (context, index) {
               return Column(
                 children: [
-                  Container(
-                    height: 100,
-                    width: 100,
-                    decoration: BoxDecoration(
-                        color: re,
-                        borderRadius: BorderRadius.circular(50),
-                        border: Border.all(width: 2, color: wh)),
+                  InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => ownstatus()));
+                    },
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      decoration: BoxDecoration(
+                          color: re,
+                          borderRadius: BorderRadius.circular(50),
+                          border: Border.all(width: 2, color: wh)),
+                    ),
                   ),
                   Text(
                     "moring",

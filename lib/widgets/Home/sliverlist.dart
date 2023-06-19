@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/utils/images.dart';
 import 'package:instagram_clone/widgets/Home/image.dart';
 import 'package:instagram_clone/widgets/Home/likebuttons.dart';
 
@@ -10,12 +11,12 @@ class sliverlist extends StatelessWidget {
     return SliverList.separated(
       itemBuilder: (context, index) {
         return SizedBox(
-          height: 571,
+          height: 771,
           width: double.infinity,
           child: Column(
             children: [
-              postbanner(),
-              postimeage(),
+              postbanner( context,index),
+              postimeage(index),
               likedbuttons(),
               description(),
               commentssetction()
@@ -24,9 +25,9 @@ class sliverlist extends StatelessWidget {
         );
       },
       separatorBuilder: (context, index) {
-        return const SizedBox();
+        return SizedBox();
       },
-      itemCount: 50,
+      itemCount: imagesss.toString().length,
     );
   }
 }

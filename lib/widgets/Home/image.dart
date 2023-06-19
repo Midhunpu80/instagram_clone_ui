@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone/utils/colors.dart';
 
-Widget postimeage() {
+import 'package:instagram_clone/utils/images.dart';
+
+Widget postimeage(int index) {
   return Container(
-    height: 300,
+    height: 
+    500,
     width: 500,
-    color: re,
+    decoration: BoxDecoration(
+        image: DecorationImage(
+            image: AssetImage(
+              imagesss[index],
+            ),
+            fit: BoxFit.cover)),
   );
 }
